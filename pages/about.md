@@ -1,14 +1,14 @@
 ---
 layout: page
 title: About
-description: 打码改变世界
-keywords: Zhuang Ma, 马壮
+description: 测试改变世界
+keywords: Kaka, 卡卡
 comments: true
 menu: 关于
 permalink: /about/
 ---
 
-我是马壮，码而生，码而立。
+我是卡卡，测试工程师。
 
 仰慕「优雅编码的艺术」。
 
