@@ -4,6 +4,7 @@ title: Fiddler 之基本介绍
 categories: Fiddler
 description: Fiddler背景介绍与原理
 keywords: Fiddler, Filter, Device
+
 ---
 
 ### 背景介绍
@@ -19,88 +20,38 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
 打开Fiddler后，Fiddler会自动篡改代理，打开ie的internet选项->连接->局域网设置->高级可以看到下图
 通过更改浏览器的代理服务地址，Fiddler就可以截获所有发出的请求
 
+### Fiddler两种代理模式
 
-*设计操作流程：*
+流模式：（streaming） 实时传送给客户端（更接近于浏览器本身真实的行为）
+缓冲模式： （buffering） 等http请求所有东西都准备好后才返回给应用程序（可控制最后的服务器响应）
+在Fiddler的工具栏的Stream可以进行两种模式的切换，默认是缓冲模式
 
-1. 找到自己关心的设备发出的某一条请求，在它的右键弹出菜单里有我们添加的菜单项「开/关过滤单设备请求」。
+### Fiddler使用场景
 
-2. 点击该菜单项后：
-   * 若当前状态为「查看所有设备请求」，则切换为「查看单个设备请求」状态，该设备为此条请求的发送者，并清除当前已显示的所有不关心的设备的请求。
-   * 若当前状态为「查看单个设备请求」，则切换为「查看所有设备请求」状态。
+- 开发环境host配置，Tools->Hosts
 
-### 实现
+- 前后端接口调试
 
-*实现思路：*
+- 线上bugfix，将线上项目代理到本地进行修改调试(AutoResponder,Willow)
 
-* 通过修改 CustomRules.js，在右键弹出菜单上添加一个菜单项来切换请求筛选状态。
+- 性能分析和优化
 
-* 每一条请求都带有 ClientIP，它在没有网络切换之类的情况发生时能较好地唯一标识一台设备。
+### 工具栏常用功能介绍
 
-* 筛选规则是将非来自该 ClientIP 的请求隐藏掉。
+- Replay，回放会话，选中会话并按R键即可回放会话（可多条）
+- 清空监控面板，快捷键ctrl+x
+- go 断点调试
+- stream切换代理模式
+- Decode 解压请求
+- keep all session选项可选保存会话的数量，默认的保存所有，保存的会话越多，fiddler占用的内存越大，可以设置下，而且调试也不希望看到太多会话，可以根据需要清空监控面板或过滤请求
+- All Process，可以用来控制如只捕获chrome浏览器的请求
+- Find 可以查找会话并选择颜色高亮标明
+- TextWizard 解码/编码功能，可选选项很多，避免去网上找解码工具
 
-*实现步骤：*
+### 状态栏
 
-1. 打开 CustomRules.js。
+状态栏功能较少，但也很重要：
 
-   启动Fiddler，依次选择菜单 Rules > Customize Rules...
-
-2. 在 `OnBeforeRequest` 前添加如下代码：
-
-   ```js
-   // 是否过滤单设备请求标志
-   public static var gs_FilterDevice: boolean = false;
-   // 显示请求的设备的 ClientIP
-   public static var gs_FilterClientIP: String = null;
-
-   static function IsUnMatchClientIP(oS:Session):Boolean {
-       return (oS.m_clientIP != gs_FilterClientIP);
-   }
-
-   public static ContextAction("开/关过滤单设备请求")
-   function ToggleDeviceFilter(oSessions: Fiddler.Session[]){
-       if (gs_FilterDevice) {
-           gs_FilterDevice = false;
-           return;
-       }
-       var oS: Session = FiddlerApplication.UI.GetFirstSelectedSession();
-       if (null == oS) return;
-       if (!gs_FilterDevice) {
-           gs_FilterDevice = true;
-       }
-       gs_FilterClientIP = oS.clientIP;
-
-       // 删除当前已显示的非所关心设备的请求
-       FiddlerApplication.UI.actSelectSessionsMatchingCriteria(IsUnMatchClientIP);
-       FiddlerApplication.UI.actRemoveSelectedSessions();
-   }
-   ```
-
-3. 在 `OnBeforeRequest` 函数里添加如下代码，用于在「查看单个设备请求」状态时将不关心的设备产生的新请求隐藏：
-
-   ```js
-   if (gs_FilterDevice && oSession.m_clientIP != gs_FilterClientIP) {
-       oSession["ui-hide"] = "true";
-   }
-   ```
-
-*最终效果如下图：*
-
-* 筛选前
-
-  ![](/images/posts/fiddler/fiddler-filter-by-device-before.png)
-
-* 筛选后
-
-  ![](/images/posts/fiddler/fiddler-filter-by-device-after.png)
-
-### 缺陷
-
-当前做法有如下缺陷，尚未想到好办法解决：  
-
-* 菜单项并不能标明当前的状态，不知道筛选是开是关，这可以通过查看当前 Session 列表里是否有多种设备的请求来判断。
-
-* 当设备有网络切换时，比如重启了路由或者离开又回到某 Wifi，ClientIP 可能发生了变化，需要关闭筛选后在设备以新的 ClientIP 产生的请求上右键再次开启筛选。
-
-### 附注
-
-我使用的完整最新的 CustomRules.js 文件我上传到了一个 Gist 里，详见：<https://gist.github.com/mzlogin/3c5f9781c5bedff3fcfb>，如果想直接使用可以复制脚本内容后放置到「我的文档/Fiddler 2/Scripts/CustomRules.js」，也可以在此目录下使用 git 抓取我的最新定制 js 文件。
+- Capture用来控制Fiddler是否工作，点击即可切换状态
+- All Process控制请求来源
+- 旁边的数字代表当前会话数量
