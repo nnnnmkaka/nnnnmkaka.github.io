@@ -53,7 +53,7 @@ DISM.exe /Online /Enable-Feature /FeatureName:NetFX3 /Source:F:\win10\sources\sx
 
 解决办法是输入dism.exe /?，在帮助命令中找到所要用的命令，复制粘贴，递归上述步骤，直至复制示例的完整的命令DISM.exe /Online /Enable-Feature /FeatureName:
 
-![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img5.png)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img5.jpg)
 
 然后补上后面的参数，路径地址为自己解压的系统文件夹下\sources\sxs文件夹整个路径。
 
@@ -63,6 +63,6 @@ DISM.exe /Online /Enable-Feature /FeatureName:NetFX3 /Source:F:\win10\sources\sx
 
 可在控制面板程序和功能->启用或关闭Windows功能查看，.Net framework3.5前复选框已选择则安装成功。
 
-![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img7.png)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img7.jpg)
 
-![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img8.png)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img8.jpg)
