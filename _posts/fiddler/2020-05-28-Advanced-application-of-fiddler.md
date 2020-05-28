@@ -78,7 +78,7 @@ Tools->Performance->Disable Caching
 
 把这段脚本放在OnBeforeRequest(oSession: Session) 方法下，并且点击"Save script"
 
-```
+```js
 if (oSession.HostnameIs("www.cnblogs.com")) {
 
       oSession["ui-color"] = "red";
@@ -93,7 +93,7 @@ if (oSession.HostnameIs("www.cnblogs.com")) {
 ------
 
 cookie其实就是request 中的一个header.
-```
+```js
 // 删除所有的cookie
 
 oSession.oRequest.headers.Remove("Cookie");
@@ -104,7 +104,7 @@ oSession.oRequest.headers.Add("Cookie", "username=testname;testpassword=P@ssword
 注意: Fiddler script不能直接删除或者编辑单独的一个cookie， 你需要用replace方法或者正则表达式的方法去操作cookie的string
 
 复制代码
-```
+```js
 static function OnBeforeRequest(oSession: Session) { 
 
    if (oSession.HostnameIs('www.example.com') && 
