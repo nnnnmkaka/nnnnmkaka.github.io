@@ -49,20 +49,20 @@ DISM.exe /Online /Enable-Feature /FeatureName:NetFX3 /Source:F:\win10\sources\sx
 
 可能会出现如下错误：“未识别命令”
 
-![img](file:///C:\Users\V_ZHYA~1\AppData\Local\Temp\ksohtml15996\wps2.png) 
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img4.png)
 
 解决办法是输入dism.exe /?，在帮助命令中找到所要用的命令，复制粘贴，递归上述步骤，直至复制示例的完整的命令DISM.exe /Online /Enable-Feature /FeatureName:
 
-![img](file:///C:\Users\V_ZHYA~1\AppData\Local\Temp\ksohtml15996\wps3.jpg) 
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img5.png)
 
 然后补上后面的参数，路径地址为自己解压的系统文件夹下\sources\sxs文件夹整个路径。
 
 回车运行，100%后显示操作成功。
 
-![img](file:///C:\Users\V_ZHYA~1\AppData\Local\Temp\ksohtml15996\wps4.png) 
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img6.png)
 
 可在控制面板程序和功能->启用或关闭Windows功能查看，.Net framework3.5前复选框已选择则安装成功。
 
-![img](file:///C:\Users\V_ZHYA~1\AppData\Local\Temp\ksohtml15996\wps5.jpg) 
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img7.png)
 
- ![img](file:///C:\Users\V_ZHYA~1\AppData\Local\Temp\ksohtml15996\wps6.jpg)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img8.png)
