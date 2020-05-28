@@ -4,8 +4,6 @@ title: Fiddler 之基本介绍
 categories: Fiddler
 description: Fiddler背景介绍与原理
 keywords: Fiddler, Filter, Device
-
-
 ---
 
 ### 背景介绍
@@ -18,14 +16,26 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
 ### Fiddler原理
 
 在本机开启一个http的代理服务器，然后它会转发所有的http请求和响应到最终的服务器,如图所示
-打开Fiddler后，Fiddler会自动篡改代理，打开ie的internet选项->连接->局域网设置->高级可以看到下图
+
+![](http://km.oa.com/files/post_photo/692/234692/05b5174ead9dbf9f738b1cc5aa0bd91a1462759742.jpg)
+
+Fiddler就是一个代理层，打开Fiddler后，可以记录请求响应、修改经过它的文件、延迟传输、修改域名对应的IP等等。打开ie的internet选项->连接->局域网设置->高级可以看到下图
+
+![](https://img-blog.csdn.net/20181023161456529?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xvbmVyX2Zhbmc=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70)
+
 通过更改浏览器的代理服务地址，Fiddler就可以截获所有发出的请求
+
+
 
 ### Fiddler两种代理模式
 
-流模式：（streaming） 实时传送给客户端（更接近于浏览器本身真实的行为）
-缓冲模式： （buffering） 等http请求所有东西都准备好后才返回给应用程序（可控制最后的服务器响应）
 在Fiddler的工具栏的Stream可以进行两种模式的切换，默认是缓冲模式
+
+- 流模式：（streaming） 实时传送给客户端（更接近于浏览器本身真实的行为）
+
+- 缓冲模式： （buffering） 等http请求所有东西都准备好后才返回给应用程序（可控制最后的服务器响应）
+
+  
 
 ### Fiddler使用场景
 
@@ -39,6 +49,8 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
 
 
 - 性能分析和优化
+
+  
 
 
 ### 工具栏常用功能介绍
