@@ -5,6 +5,7 @@ categories: Fiddler
 description: Fiddler背景介绍与原理
 keywords: Fiddler, Filter, Device
 
+
 ---
 
 ### 背景介绍
@@ -114,6 +115,7 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
    ```
    Eg:选择所有状态为200的HTTP请求：=200
    ```
+
 6. @host命令
 
    选择包含指定 HOST 的全部 HTTP请求。
@@ -121,23 +123,48 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
    ```
    Eg：选择所有host包含csdn.net的请求：@csdn.net
    ```
-7. Bpafter， Bps, bpv, bpm, bpu
+
+7. Bpafter,Bps, bpv, bpm, bpu
 
    这几个命令主要用于批量设置断点:
-  
+
    ```
    Bpafter xxx: 中断 URL 包含指定字符的全部 session 响应
- 
+    
    Bps xxx: 中断 HTTP 响应状态为指定字符的全部 session 响应。
-
+   
    Bpv xxx: 中断指定请求方式的全部 session 响应
-
+   
    Bpm xxx: 中断指定请求方式的全部 session 响应。等同于bpv xxx
-  
+    
    Bpu xxx:与bpafter类似。
-  
+    
    当这些命令没有加参数时，会清空所有设置了断点的HTTP请求。
    ```
+
 8. help
 
    输入help会弹出这个页面 http://docs.telerik.com/fiddler/knowledgebase/quickexec，是fiddler的官方命令行文档
+
+### 右侧窗口功能
+
+- Stastics：统计选中的一个或多个请求相关数据，大小、耗时
+
+​       最下方会有一个不太容易发现的功能show charts，点击会对请求进行可视化处理
+
+- Inspectors：多种方式查看Request或者Response的详细消息,如图：
+
+- AutoResponder： 设置一些规则将符合规则的请求重定向到本地。
+
+- Composer：创建发送HTTP请求/前后端接口联调
+
+- Filters：设置会话过滤规则
+
+- Log：日志
+
+- Timeline：性能优化和分析
+
+- Willow的使用：请求重定向（模拟响应）
+
+​       右键添加项目，规则，host
+
