@@ -1,19 +1,16 @@
 - name: Software Engineer Keywords
   keywords:
-      - Java
-      - C++
-      - Python
-      - Design Patterns
+      - 测试基础理论
+      - 测试用例
+      - 自动化测试
+      - 抓包
 
-- name: Mobile Developer Keywords
+- name: Mobile Tester Keywords
   keywords:
       - Android
-      - Reverse Engineering
+      - iOS 
 
 - name: Windows Developer Keywords
   keywords:
-      - Win32 SDK
-      - DuiLib
-      - WTL
-      - COM
-      - WinDbg
+      - Windows
+      - Mac
