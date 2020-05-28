@@ -101,58 +101,43 @@ Fiddler是用C#写出来的,它包含一个简单却功能强大的基于JScript
 
 4. 小于/大于size命令
 
-​       选择响应大小大于某个大小或者小于某个大小的所有HTTP请求  
+   选择响应大小大于某个大小或者小于某个大小的所有HTTP请求  
 
-```
- Eg:选择响应大小小于10k的请求：<10k
-```
+   ```
+   Eg:选择响应大小小于10k的请求：<10k
+   ```
 
-5. treter
-   eretr
+5. =status命令
 
+   选择响应状态等于给定状态的所有HTTP请求
 
+   ```
+   Eg:选择所有状态为200的HTTP请求：=200
+   ```
+6. @host命令
 
+   选择包含指定 HOST 的全部 HTTP请求。
 
+   ```
+   Eg：选择所有host包含csdn.net的请求：@csdn.net
+   ```
+7. Bpafter， Bps, bpv, bpm, bpu
 
+   这几个命令主要用于批量设置断点:
+  
+   ```
+   Bpafter xxx: 中断 URL 包含指定字符的全部 session 响应
+ 
+   Bps xxx: 中断 HTTP 响应状态为指定字符的全部 session 响应。
 
+   Bpv xxx: 中断指定请求方式的全部 session 响应
 
+   Bpm xxx: 中断指定请求方式的全部 session 响应。等同于bpv xxx
+  
+   Bpu xxx:与bpafter类似。
+  
+   当这些命令没有加参数时，会清空所有设置了断点的HTTP请求。
+   ```
+8. help
 
-
-
-
-
-
-1. 
-
-2. 
-
-3. 
-
-4. 
-
-5. 
-
-6. > 
-
-
-
-?
-
-
-
-小于/大于size命令
-选择响应大小大于某个大小或者小于某个大小的所有HTTP请求
-
-Eg:选择响应大小小于10k的请求：<10k
-
-=status命令
-选择响应状态等于给定状态的所有HTTP请求。
-
-Eg:选择所有状态为200的HTTP请求：=200
-
-@host命令
-选择包含指定 HOST 的全部 HTTP请求。
-
-Eg：选择所有host包含csdn.net的请求：@csdn.net
-
-Bpafter， Bps, bpv, bpm, bpu
+   输入help会弹出这个页面 http://docs.telerik.com/fiddler/knowledgebase/quickexec，是fiddler的官方命令行文档
