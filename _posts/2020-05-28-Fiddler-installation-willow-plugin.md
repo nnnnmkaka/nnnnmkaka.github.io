@@ -15,15 +15,15 @@ Willow是一个Fiddler的插件，提供重定向和host主机等功能，通过
 Fiddler4的Willow插件下载地址：https://github.com/QzoneTouch/commonWidget/releases<br/>
 官方说明：https://qzonetouch.github.io/commonWidget/willow
 
-![img](images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img1.png)
+![img1](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img1.png)
 
 安装插件之前，需要把fiddler客户端关闭，下载完插件压缩包之后，将其放到fiddler的安装目录中解压，如有文件重复就需要替换
 
-![img](images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img2.png)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img2.png)
 
 文件解压完成后，重新启动Fiddler，在右边的窗口中，可看到willow插件，至此，willow安装成功！
 
-![img](images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img3.png)
+![img](/images/posts/fiddler/2020-05-28-Fiddler-installation-willow-plugin-img3.png)
 
 
 
