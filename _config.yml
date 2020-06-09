@@ -123,7 +123,7 @@ comments_provider: gitalk
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: nnnnmkaka
-    repo: blog-comments
+    repo: nnnnmkaka.github.io
     clientID: abef5aefeafdfc1116d3
     clientSecret: 2cea41505e960e425aa885b17debc7ad8c656888
 # 在使用其它评论组件时可点击显示 Disqus
