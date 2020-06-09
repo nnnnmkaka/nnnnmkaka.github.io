@@ -84,7 +84,7 @@ markdown: kramdown
 kramdown:
     input: GFM
 highlighter: rouge
-paginate: 10
+paginate: 8
 lsi: false
 quiet: false
 excerpt_separator: "\n\n"
@@ -111,15 +111,15 @@ comments_provider: gitalk
 # !!!重要!!! 请修改下面这些信息为你自己申请的
 # !!!Important!!! Please modify infos below to yours
 # https://disqus.com
-disqus:
-    username: 
+#disqus:
+#    username: 
 # https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: nnnnmkaka
-    repo: blog-comments
-    oauth:
-        client_id: abef5aefeafdfc1116d3
-        client_secret: 2cea41505e960e425aa885b17debc7ad8c656888
+#gitment:
+#    owner: nnnnmkaka
+#    repo: blog-comments
+#    oauth:
+#        client_id: abef5aefeafdfc1116d3
+#        client_secret: 2cea41505e960e425aa885b17debc7ad8c656888
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: nnnnmkaka
