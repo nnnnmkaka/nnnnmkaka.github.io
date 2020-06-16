@@ -10,12 +10,9 @@ keywords: jmeter
 
 ## 1、环境部署
 
-- 安装jmeter之前，需要安装并配置好jdk，参考[【window10】jdk8的下载和安装步骤][https://blog.csdn.net/qq_39720249/article/details/80721719]
+- 安装jmeter之前，需要安装并配置好jdk，参考[【window10】jdk8的下载和安装步骤](https://blog.csdn.net/qq_39720249/article/details/80721719)
 
-- jmeter安装与配置，参考[故三殇【Jmeter 下载、安装、汉化】][https://blog.csdn.net/qq_39720249/article/details/80721777]
-
-
-
+- jmeter安装与配置，参考[故三殇【Jmeter 下载、安装、汉化】](https://blog.csdn.net/qq_39720249/article/details/80721777)
 
 <br/>
 
