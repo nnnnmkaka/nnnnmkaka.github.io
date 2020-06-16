@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jmeter的安装与配置
-categories: 性能测试
+categories: 【性能测试】系列之——Jmeter
 description: Jmeter的安装与配置
 keywords: jmeter
 ---
