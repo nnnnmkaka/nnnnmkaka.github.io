@@ -13,7 +13,7 @@ keywords: jmeter
 
 ![image-20200616150259736](https://github.com/nnnnmkaka/nnnnmkaka.github.io/blob/master/images/posts/Jmeter/2020-06-16-jmeter-Print%20timestamp_1.png?raw=true)
 
-<br/>关于时间戳的格式，可以自由组合定义，例如：**<font color=red>yyyy-MM-dd HH:mm:ss</font>**，生成的函数：${__time(yyyy-MM-dd HH:mm:ss,)}
+<br/>关于时间戳的格式，可以自由组合定义，例如：**<font color="red">yyyy-MM-dd HH:mm:ss</font>**，生成的函数：${__time(yyyy-MM-dd HH:mm:ss,)}
 
 |  年  |  月  |  日  |  时  |  分  |  秒  |
 | :--: | :----: | :----: | :----: | :----: | :----: |
@@ -32,7 +32,7 @@ keywords: jmeter
 <br/>
 此函数适用于一些需要填写时间参数的接口，用于实时获取当前时间。时间参数如果写死的话，过段时间接口就会报错啦~<br/>
 
-<br/>下面说一下<font color=red>时间偏移如何打印</font>。
+<br/>下面说一下<font color="red">时间偏移如何打印</font>。
 
 <br/>说到时间偏移，就是说我不光想打印当前时间，我还想打印明天，后台，甚至是明年的时间，那么我们要怎么去处理?这里就需要用到 **BeanShell Sampler**
 
