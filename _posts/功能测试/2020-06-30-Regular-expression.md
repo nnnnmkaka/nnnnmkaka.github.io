@@ -79,7 +79,7 @@ keywords: Regular expression,正则表达式
 <table  style="width:600px; margin:auto;">
   <thead>
     <tr>
-      <th>代码/语法</th>
+      <th>代码</th>
       <th align="left">说明</th>
     </tr>
   </thead>
