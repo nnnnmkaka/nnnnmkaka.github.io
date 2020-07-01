@@ -58,17 +58,17 @@ keywords: Regular expression,正则表达式
 
 示例：
 
->  [举例1：表达式 "<font color="red">\d\d</font>"，在匹配 "abc123" 时](http://www.regexlab.com/zh/workshop.asp?pat=\d\d&txt=abc123)，匹配的结果是：成功；匹配到的内容是："12"；匹配到的位置是：开始于3，结束于5。
+>[举例1：表达式 "<font color="red">\d\d</font>"，在匹配 "abc123" 时](http://www.regexlab.com/zh/workshop.asp?pat=\d\d&txt=abc123)，匹配的结果是：成功；匹配到的内容是："12"；匹配到的位置是：开始于3，结束于5。
 >
->   [举例2：表达式 "<font color="red">a.\d</font>"，在匹配 "aaa100" 时](http://www.regexlab.com/zh/workshop.asp?pat=a.\d&txt=aaa100)，匹配的结果是：成功；匹配到的内容是："aa1"；匹配到的位置是：开始于1，结束于4。
+>[举例2：表达式 "<font color="red">a.\d</font>"，在匹配 "aaa100" 时](http://www.regexlab.com/zh/workshop.asp?pat=a.\d&txt=aaa100)，匹配的结果是：成功；匹配到的内容是："aa1"；匹配到的位置是：开始于1，结束于4。
 >
-> [举例3：表达式"<font color="red">\d+</font>"，在匹配"abc123"时](http://www.regexlab.com/zh/workshop.htm?pat=%5Cd%2B&txt=abc123&dlt=0)，匹配的结果是：成功；匹配到的内容是："123"；匹配到的位置是：开始于3，结束于5。"<font color="red">\d+</font>"表示匹配1个或更多连续的数字。这里的+是和* 类似的元字符，不同的是*匹配重复任意次(可能是0次)，而+则匹配重复1次或更多次。
+>[举例3：表达式"<font color="red">\d+</font>"，在匹配"abc123"时](http://www.regexlab.com/zh/workshop.htm?pat=%5Cd%2B&txt=abc123&dlt=0)，匹配的结果是：成功；匹配到的内容是："123"；匹配到的位置是：开始于3，结束于5。"<font color="red">\d+</font>"表示匹配1个或更多连续的数字。这里的+是和* 类似的元字符，不同的是*匹配重复任意次(可能是0次)，而+则匹配重复1次或更多次。
 > 
-><font color="red">\ba\w**\b*  </font> 
-> 匹配以字母a开头的单词——先是某个单词开始处(\b)，然后是字母a,然后是任意数量的字母或数字(\w*)，最后是单词结束处(\b)
+><font color="red">\ba\w**\b*</font> 
+匹配以字母a开头的单词——先是某个单词开始处(\b)，然后是字母a,然后是任意数量的字母或数字(\w*)，最后是单词结束处(\b)
 > 
-><font color="red">\b\w{6}\b </font>
-> 匹配刚好6个字符的单词。
+><font color="red">\b\w{6}\b</font>
+匹配刚好6个字符的单词。
 
 
 
@@ -114,10 +114,10 @@ keywords: Regular expression,正则表达式
 
 下面是一些使用重复的例子：
 
-> [Windows\d+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)   匹配Windows后面跟1个或更多数字
+>[Windows\d+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)   匹配Windows后面跟1个或更多数字
 > 
-> [13\d{9}](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)            匹配13后面跟9个数字(中国的手机号)
-> 
+>[13\d{9}](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)            匹配13后面跟9个数字(中国的手机号)
+>
 >[^\w+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)                 匹配一行的第一个单词(或整个字符串的第一个单词，具体匹配哪个意思得看选项设置)
 
 
