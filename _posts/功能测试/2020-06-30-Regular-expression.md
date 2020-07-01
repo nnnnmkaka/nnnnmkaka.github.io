@@ -80,13 +80,13 @@ keywords: Regular expression,正则表达式
   <thead>
     <tr>
       <th>代码</th>
-      <th>说明</th>
+      <th align="left">说明</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>*</td>
-      <td align="left">重复零次或更多次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td align="left">重复零次或更多次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td>+</td>
@@ -128,17 +128,15 @@ keywords: Regular expression,正则表达式
 
 俗话说，要想攻其事，必先利其器。
 
-[外链图片转存失败,源站可能有防盗链机制,建议将图片保存下来直接上传(img-J1MLgAas-1593609568345)(http://km.oa.com/files/photos/captures/201810/1539061573_1_w290_h52.png)]
-
 在线测试：
 
-https://regex101.com/（推荐）
+https://regex101.com/  （推荐）
 
 http://www.regexpal.com/
 
 http://tool.chinaz.com/regex
 
-[https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24](https://jex.im/regulex/#!flags=&re=^(a|b)*%3F%24)  (正则分析)
+https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24/   (正则分析)
 
 本地测试：
 
