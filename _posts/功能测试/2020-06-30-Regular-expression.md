@@ -76,14 +76,40 @@ keywords: Regular expression,正则表达式
 
 <center>表2.常用的限定符代码</center>
 
-| 代码/语法 |说明|
-| :-----| :-----|
-|     *     | 重复零次或更多次 |
-|     +     | 重复一次或更多次 |
-|     ?     |  重复零次或一次  |
-|    {n}    |     重复n次      |
-|   {n,}    | 重复n次或更多次  |
-|   {n,m}   |    重复n到m次    |
+<table  style="width:600px; margin:auto;">
+  <thead>
+    <tr>
+      <th>代码/语法</th>
+      <th align="left">说明</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*</td>
+      <td align="left">重复零次或更多次</td>
+    </tr>
+    <tr>
+      <td>+</td>
+      <td align="left">重复一次或更多次</td>
+    </tr>
+    <tr>
+      <td>?</td>
+      <td align="left">重复零次或一次</td>
+    </tr>
+    <tr>
+      <td>{n}</td>
+      <td align="left">重复n次</td>
+    </tr>
+    <tr>
+      <td>{n,}</td>
+      <td align="left">重复n次或更多次</td>
+    </tr>
+    <tr>
+      <td>{n,m}</td>
+      <td align="left">重复n到m次</td>
+    </tr>
+  </tbody>
+</table>
 
 下面是一些使用重复的例子：
 
@@ -109,7 +135,7 @@ http://www.regexpal.com/
 
 http://tool.chinaz.com/regex
 
-[https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24](https://jex.im/regulex/#!flags=&re=^(a|b)*%3F%24) (正则分析)
+[https://jex.im/regulex/#!flags=&re=%5E(a%7Cb)*%3F%24](https://jex.im/regulex/#!flags=&re=^(a|b)*%3F%24) \(正则分析)
 
 本地测试：
 
@@ -135,7 +161,7 @@ http://www.regexbuddy.com/
 
 匹配网址URL的正则表达式：[a-zA-z]+://\[^\s]*　　
 
-匹配帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^\[a-zA-Z][a-zA-Z0-9_]{4,15}$　　
+匹配帐号是否合法(字母开头，允许5-16字节，允许字母数字下划线)：^\[a-zA-Z][a-zA-Z0-9_{4,15}$　　
 
 匹配国内电话号码：\d{4}-\d{7}|\d{3}-\d{8}　
 
