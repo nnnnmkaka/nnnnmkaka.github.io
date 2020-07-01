@@ -86,7 +86,7 @@ keywords: Regular expression,正则表达式
   <tbody>
     <tr>
       <td>*</td>
-      <td align="left">重复零次或更多次</td>
+      <td align="left">11重复零次或更多次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td>+</td>
@@ -110,6 +110,7 @@ keywords: Regular expression,正则表达式
     </tr>
   </tbody>
 </table>
+
 
 
 
