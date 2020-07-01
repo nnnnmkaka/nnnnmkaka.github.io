@@ -80,13 +80,13 @@ keywords: Regular expression,正则表达式
   <thead>
     <tr>
       <th>代码</th>
-      <th align="left">说明</th>
+      <th align="left">说明&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>*</td>
-      <td align="left">重复零次或更多次&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+      <td align="left">重复零次或更多次</td>
     </tr>
     <tr>
       <td>+</td>
@@ -112,13 +112,14 @@ keywords: Regular expression,正则表达式
 </table>
 
 
+
 下面是一些使用重复的例子：
 
->[Windows\d+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)   匹配Windows后面跟1个或更多数字
-> 
->[13\d{9}](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)            匹配13后面跟9个数字(中国的手机号)
+> [Windows\d+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)   匹配Windows后面跟1个或更多数字
 >
->[^\w+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)                 匹配一行的第一个单词(或整个字符串的第一个单词，具体匹配哪个意思得看选项设置)
+> [13\d{9}](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)            匹配13后面跟9个数字(中国的手机号)
+>
+> [^\w+](http://www.regexlab.com/zh/workshop.htm?pat=Windows%5Cd%2B&rto=1&txt=Windows12345%0AWindowsaaaaa%0AWindows%u55EF%u55EF%u55EF%u55EF%u55EF%u55EF&dlt=0)                 匹配一行的第一个单词(或整个字符串的第一个单词，具体匹配哪个意思得看选项设置)
 
 
 
